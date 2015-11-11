@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#282828" />
+
+    <LinearLayout
+        android:id="@+id/lnr_font_size"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp" >
+
+        <TextView
+            android:id="@+id/txtvw_fontname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:text="Like"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+
+        <ImageView
+            android:id="@+id/checkBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ok"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#282828" />
+
+    <LinearLayout
+        android:id="@+id/lnr_font_size2"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp" >
+
+        <TextView
+            android:id="@+id/txtvw_fontname2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:text="Small"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+
+        <ImageView
+            android:id="@+id/checkBox2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ok"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#282828" />
+
+    <LinearLayout
+        android:id="@+id/lnr_font_size3"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp" >
+
+        <TextView
+            android:id="@+id/txtvw_fontname3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:text="Medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+
+        <ImageView
+            android:id="@+id/checkBox3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ok"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#282828" />
+
+    <LinearLayout
+        android:id="@+id/lnr_font_size4"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp" >
+
+        <TextView
+            android:id="@+id/txtvw_fontname4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:text="Large"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+
+        <ImageView
+            android:id="@+id/checkBox4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ok"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#282828" />
+
+    <LinearLayout
+        android:id="@+id/lnr_font_size5"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp" >
+
+        <TextView
+            android:id="@+id/txtvw_fontname5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="4"
+            android:text="Xl"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+
+        <ImageView
+            android:id="@+id/checkBox5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/ok"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#282828" />
+
+</LinearLayout><!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/layout/font_fragment.xml -->

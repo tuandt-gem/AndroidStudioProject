@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/width_extra_min_low_checkbox2"
+    android:background="#f64747" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text_view_bible_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_extra_long"
+            android:text="Genesis 1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/menu_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_short"
+        android:button="@drawable/navigation_icon_selector"
+        android:contentDescription="@string/app_name"
+        android:onClick="showDrawer"
+        android:padding="@dimen/padding_short" />
+    
+    <ImageView
+            android:id="@+id/img_day_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:onClick="dayNightClicked"
+            android:padding="@dimen/padding_short"
+            android:src="@drawable/ic_day" 
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/menu_icon"/>
+
+    <LinearLayout
+        android:id="@+id/layoutId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_bookmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:onClick="bookMarClick"
+            android:padding="@dimen/padding_short"
+            android:src="@drawable/bookmarks_menu_icon" />
+
+        <ImageView
+            android:id="@+id/reader_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:onClick="ActionBarView.onClick"
+            android:padding="@dimen/padding_short"
+            android:src="@drawable/language_nav_icon" />
+
+        <ImageView
+            android:id="@+id/reader_serach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:onClick="serachBarClick"
+            android:padding="@dimen/padding_short"
+            android:src="@drawable/search_icon" />
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:onClick="ActionBarView.onClick"
+            android:padding="@dimen/padding_short"
+            android:src="@drawable/delete_icon"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/layout/custom_actionbar.xml -->

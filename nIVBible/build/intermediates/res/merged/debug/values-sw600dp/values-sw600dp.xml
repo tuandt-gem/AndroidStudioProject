@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-sw600dp/color.xml -->
+    <eat-comment/>
+    <color name="black">#000</color>
+    <color name="blue">#278be9</color>
+    <color name="blue_trans">#02078be9</color>
+    <color name="dark_gray">#666666</color>
+    <color name="holo_dark">#cbcbcb</color>
+    <color name="holo_light">#ebebeb</color>
+    <color name="light_gray">#278be9</color>
+    <color name="red">#ff0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#fff</color>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml -->
+    <eat-comment/>
+    <dimen name="abc_action_bar_content_inset_material">24dp</dimen>
+    <dimen name="abc_action_bar_default_height_material">64dp</dimen>
+    <dimen name="abc_action_bar_default_padding_material">4dp</dimen>
+    <dimen name="abc_action_bar_navigation_padding_start_material">8dp</dimen>
+    <dimen name="abc_action_bar_overflow_padding_end_material">18dp</dimen>
+    <dimen name="abc_config_prefDialogWidth">580dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-sw600dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bitmap_bottom">5dp</dimen>
+    <dimen name="bitmap_left">2dp</dimen>
+    <dimen name="bitmap_right">2dp</dimen>
+    <dimen name="bitmap_top">5dp</dimen>
+    <dimen name="height_card">100dp</dimen>
+    <dimen name="height_edit_textbox">50dp</dimen>
+    <dimen name="height_extra_large">920dp</dimen>
+    <dimen name="height_extra_min">306dp</dimen>
+    <dimen name="height_extra_min_settings">280dp</dimen>
+    <dimen name="height_extra_super">400dp</dimen>
+    <dimen name="height_half">612dp</dimen>
+    <dimen name="height_list_view">160dp</dimen>
+    <dimen name="height_member_ships_card_big">220dp</dimen>
+    <dimen name="height_member_ships_card_layout_big">240dp</dimen>
+    <dimen name="height_member_ships_card_layout_small">190dp</dimen>
+    <dimen name="height_member_ships_card_small">170dp</dimen>
+    <dimen name="height_normal">760dp</dimen>
+    <dimen name="height_of_Tick_1_months">100dp</dimen>
+    <dimen name="height_of_Tick_6_months">100dp</dimen>
+    <dimen name="height_points_collected">500dp</dimen>
+    <dimen name="height_rate_bar">40dp</dimen>
+    <dimen name="height_vertical_seekbar_relative">407dp</dimen>
+    <dimen name="height_vertical_seekbar_relative_prepaid">460dp</dimen>
+    <dimen name="height_width_px">90dp</dimen>
+    <dimen name="margin_costbreak_down">80dp</dimen>
+    <dimen name="margin_down_arrow">80dp</dimen>
+    <dimen name="margin_extra_long">40dp</dimen>
+    <dimen name="margin_extra_long_minus">-20dp</dimen>
+    <dimen name="margin_extra_super_med_long">50dp</dimen>
+    <dimen name="margin_extra_super_med_long_cost_break_down">130dp</dimen>
+    <dimen name="margin_ivory_home">150dp</dimen>
+    <dimen name="margin_ivory_home_how">60dp</dimen>
+    <dimen name="margin_long">30dp</dimen>
+    <dimen name="margin_meium">18dp</dimen>
+    <dimen name="margin_normal">25dp</dimen>
+    <dimen name="margin_normal_one_months">20dp</dimen>
+    <dimen name="margin_normal_one_months_box">30dp</dimen>
+    <dimen name="margin_normal_six_months">20dp</dimen>
+    <dimen name="margin_seekbar">30dp</dimen>
+    <dimen name="margin_short">14dp</dimen>
+    <dimen name="margin_text_minus_five">-5dp</dimen>
+    <dimen name="margin_text_minus_ten">-10dp</dimen>
+    <dimen name="margin_text_minus_tenfive">-15dp</dimen>
+    <dimen name="margin_thanks_to_ur_company">55dp</dimen>
+    <dimen name="margin_very_short">8dp</dimen>
+    <dimen name="padding_bottom">15dp</dimen>
+    <dimen name="padding_extra_long">18dp</dimen>
+    <dimen name="padding_left">9dp</dimen>
+    <dimen name="padding_long">16dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_normal">14dp</dimen>
+    <dimen name="padding_right">12dp</dimen>
+    <dimen name="padding_short">8dp</dimen>
+    <dimen name="padding_top">15dp</dimen>
+    <dimen name="padding_very_short">4dp</dimen>
+    <dimen name="radius_large">12dp</dimen>
+    <dimen name="radius_medium">8dp</dimen>
+    <dimen name="radius_normal">10dp</dimen>
+    <dimen name="radius_small">6dp</dimen>
+    <dimen name="text_size_extra_large">28sp</dimen>
+    <dimen name="text_size_extra_large_med">30sp</dimen>
+    <dimen name="text_size_extra_med_large">35sp</dimen>
+    <dimen name="text_size_extra_small">18sp</dimen>
+    <dimen name="text_size_large">26sp</dimen>
+    <dimen name="text_size_medium">22sp</dimen>
+    <dimen name="text_size_normal">24sp</dimen>
+    <dimen name="text_size_small">20sp</dimen>
+    <dimen name="text_size_super_extra_large">100sp</dimen>
+    <dimen name="text_size_super_large">75sp</dimen>
+    <dimen name="text_size_super_med_large">60sp</dimen>
+    <dimen name="top_bar_height">60dp</dimen>
+    <dimen name="width_ListHalf">480dp</dimen>
+    <dimen name="width_card">200dp</dimen>
+    <dimen name="width_extra_large">520dp</dimen>
+    <dimen name="width_extra_min">150dp</dimen>
+    <dimen name="width_extra_min_low">100dp</dimen>
+    <dimen name="width_extra_min_low_checkbox">50dp</dimen>
+    <dimen name="width_extra_min_low_checkbox2">70dp</dimen>
+    <dimen name="width_extra_super">250dp</dimen>
+    <dimen name="width_gridview">280dp</dimen>
+    <dimen name="width_half">300dp</dimen>
+    <dimen name="width_normal">480dp</dimen>
+    <dimen name="width_popup_window">240dp</dimen>
+    <dimen name="width_vertical_seekbar">26dp</dimen>
+    <dimen name="width_vertical_seekbar_relative">30dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-sw600dp/color.xml -->
+    <eat-comment/>
+    <drawable name="actiontransparent">#00000000</drawable>
+    <drawable name="transarent_game">#00000000</drawable>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml -->
+    <eat-comment/>
+    <integer name="abc_max_action_buttons">5</integer>
+</resources>

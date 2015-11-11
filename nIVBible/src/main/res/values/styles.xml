@@ -1,0 +1,106 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Menu Fragment -->
+    <style name="MenuFragmentStyle" parent="AppTheme">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:colorForeground">@android:color/transparent</item>
+        <item name="android:colorForegroundInverse">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="TextView" />
+
+    <style name="TextView.DefaultStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/menu_text_size</item>
+    </style>
+    <!-- End -->
+
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_top</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+    <style name="TextNote">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:text">Note</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:maxLines">@integer/max_note_lines</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+</resources>

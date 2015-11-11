@@ -1,0 +1,325 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From NIVBible:
+* .metadata\
+* .metadata\.lock
+* .metadata\.log
+* .metadata\.plugins\
+* .metadata\.plugins\org.eclipse.cdt.core\
+* .metadata\.plugins\org.eclipse.cdt.core\.log
+* .metadata\.plugins\org.eclipse.cdt.make.core\
+* .metadata\.plugins\org.eclipse.cdt.make.core\specs.c
+* .metadata\.plugins\org.eclipse.cdt.make.core\specs.cpp
+* .metadata\.plugins\org.eclipse.core.resources\
+* .metadata\.plugins\org.eclipse.core.resources\.root\
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\history.version
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.index
+* .metadata\.plugins\org.eclipse.core.resources\.root\.indexes\properties.version
+* .metadata\.plugins\org.eclipse.core.resources\.root\1.tree
+* .metadata\.plugins\org.eclipse.core.resources\.safetable\
+* .metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources
+* .metadata\.plugins\org.eclipse.core.runtime\
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\com.android.ide.eclipse.adt.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.cdt.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.core.resources.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.debug.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.jdt.ui.prefs
+* .metadata\.plugins\org.eclipse.core.runtime\.settings\org.eclipse.ui.ide.prefs
+* .metadata\.plugins\org.eclipse.e4.workbench\
+* .metadata\.plugins\org.eclipse.e4.workbench\workbench.xmi
+* .metadata\.plugins\org.eclipse.jdt.core\
+* .metadata\.plugins\org.eclipse.jdt.core\invalidArchivesCache
+* .metadata\.plugins\org.eclipse.jdt.core\nonChainingJarsCache
+* .metadata\.plugins\org.eclipse.jdt.core\variablesAndContainers.dat
+* .metadata\.plugins\org.eclipse.jdt.ui\
+* .metadata\.plugins\org.eclipse.jdt.ui\OpenTypeHistory.xml
+* .metadata\.plugins\org.eclipse.jdt.ui\QualifiedTypeNameHistory.xml
+* .metadata\.plugins\org.eclipse.jdt.ui\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.workbench\
+* .metadata\.plugins\org.eclipse.ui.workbench\dialog_settings.xml
+* .metadata\.plugins\org.eclipse.ui.workbench\workingsets.xml
+* .metadata\version.ini
+* TWIBible.iml
+* ic_launcher-web.png
+* proguard-project.txt
+From SlidingDrawerLib 1.0:
+* LICENSE.txt
+* SlidingDrawerLib 1.0.iml
+* build.gradle
+* library.iml
+* pom.xml
+From WebViewMarker:
+* .gitignore
+* selection-webview-library.iml
+From facebook:
+* BUCK
+* build.gradle
+* facebook.iml
+* junitTests\
+* junitTests\build.gradle
+* junitTests\proguard-rules.pro
+* junitTests\src\
+* junitTests\src\main\
+* junitTests\src\main\AndroidManifest.xml
+* junitTests\src\main\assets\
+* junitTests\src\main\assets\ShareOpenGraphUtilityTests_actionJSON.json
+* junitTests\src\main\gen\
+* junitTests\src\main\gen\com\
+* junitTests\src\main\gen\com\facebook\
+* junitTests\src\main\gen\com\facebook\junittests\
+* junitTests\src\main\gen\com\facebook\junittests\BuildConfig.java
+* junitTests\src\main\gen\com\facebook\junittests\Manifest.java
+* junitTests\src\main\gen\com\facebook\junittests\R.java
+* junitTests\src\main\java\
+* junitTests\src\main\java\com\
+* junitTests\src\main\java\com\facebook\
+* junitTests\src\main\java\com\facebook\junittests\
+* junitTests\src\main\java\com\facebook\junittests\MainActivity.java
+* junitTests\src\main\main.iml
+* junitTests\src\main\res\
+* junitTests\src\main\res\drawable-hdpi\
+* junitTests\src\main\res\drawable-hdpi\ic_launcher.png
+* junitTests\src\main\res\drawable-mdpi\
+* junitTests\src\main\res\drawable-mdpi\ic_launcher.png
+* junitTests\src\main\res\drawable-xhdpi\
+* junitTests\src\main\res\drawable-xhdpi\ic_launcher.png
+* junitTests\src\main\res\drawable-xxhdpi\
+* junitTests\src\main\res\drawable-xxhdpi\ic_launcher.png
+* junitTests\src\main\res\layout\
+* junitTests\src\main\res\layout\activity_main.xml
+* junitTests\src\main\res\menu\
+* junitTests\src\main\res\menu\menu_main.xml
+* junitTests\src\main\res\values-w820dp\
+* junitTests\src\main\res\values-w820dp\dimens.xml
+* junitTests\src\main\res\values\
+* junitTests\src\main\res\values\dimens.xml
+* junitTests\src\main\res\values\strings.xml
+* junitTests\src\main\res\values\styles.xml
+* junitTests\src\test\
+* junitTests\src\test\java\
+* junitTests\src\test\java\com\
+* junitTests\src\test\java\com\facebook\
+* junitTests\src\test\java\com\facebook\AccessTokenCacheTest.java
+* junitTests\src\test\java\com\facebook\AccessTokenManagerTest.java
+* junitTests\src\test\java\com\facebook\AccessTokenTest.java
+* junitTests\src\test\java\com\facebook\AccessTokenTestHelper.java
+* junitTests\src\test\java\com\facebook\AccessTokenTrackerTest.java
+* junitTests\src\test\java\com\facebook\ApplicationTest.java
+* junitTests\src\test\java\com\facebook\ErrorClassificationTest.java
+* junitTests\src\test\java\com\facebook\FacebookContentProviderTest.java
+* junitTests\src\test\java\com\facebook\FacebookGraphRequestErrorTest.java
+* junitTests\src\test\java\com\facebook\FacebookPowerMockTestCase.java
+* junitTests\src\test\java\com\facebook\FacebookSdkPowerMockTest.java
+* junitTests\src\test\java\com\facebook\FacebookTestCase.java
+* junitTests\src\test\java\com\facebook\GraphErrorTest.java
+* junitTests\src\test\java\com\facebook\GraphRequestTest.java
+* junitTests\src\test\java\com\facebook\GraphUtilTest.java
+* junitTests\src\test\java\com\facebook\LegacyTokenCacheTest.java
+* junitTests\src\test\java\com\facebook\PowerMockIntegrationTest.java
+* junitTests\src\test\java\com\facebook\ProfileCacheTest.java
+* junitTests\src\test\java\com\facebook\ProfileManagerTest.java
+* junitTests\src\test\java\com\facebook\ProfileTest.java
+* junitTests\src\test\java\com\facebook\ProfileTrackerTest.java
+* junitTests\src\test\java\com\facebook\ProgressNoopOutputStreamTest.java
+* junitTests\src\test\java\com\facebook\ProgressOutputStreamTest.java
+* junitTests\src\test\java\com\facebook\TestUtils.java
+* junitTests\src\test\java\com\facebook\applinks\
+* junitTests\src\test\java\com\facebook\applinks\AppLinkDataTest.java
+* junitTests\src\test\java\com\facebook\internal\
+* junitTests\src\test\java\com\facebook\internal\BundleJSONConverterTest.java
+* junitTests\src\test\java\com\facebook\internal\CallbackManagerImplPowerMockTest.java
+* junitTests\src\test\java\com\facebook\internal\FacebookRequestErrorClassificationTest.java
+* junitTests\src\test\java\com\facebook\internal\FileLruCacheTest.java
+* junitTests\src\test\java\com\facebook\internal\JsonUtilTest.java
+* junitTests\src\test\java\com\facebook\internal\NativeAppCallAttachmentStoreTest.java
+* junitTests\src\test\java\com\facebook\internal\NativeProtocolVersionTest.java
+* junitTests\src\test\java\com\facebook\internal\ShareInternalUtilityTest.java
+* junitTests\src\test\java\com\facebook\internal\UtilityIntersectRangeTest.java
+* junitTests\src\test\java\com\facebook\internal\UtilityTest.java
+* junitTests\src\test\java\com\facebook\internal\ValidateTest.java
+* junitTests\src\test\java\com\facebook\internal\WorkQueueTest.java
+* junitTests\src\test\java\com\facebook\login\
+* junitTests\src\test\java\com\facebook\login\GetTokenLoginMethodHandlerTest.java
+* junitTests\src\test\java\com\facebook\login\KatanaProxyLoginMethodHandlerTest.java
+* junitTests\src\test\java\com\facebook\login\LoginClientTest.java
+* junitTests\src\test\java\com\facebook\login\LoginHandlerTestCase.java
+* junitTests\src\test\java\com\facebook\login\LoginManagerTest.java
+* junitTests\src\test\java\com\facebook\login\LoginResultTest.java
+* junitTests\src\test\java\com\facebook\login\WebViewLoginMethodHandlerTest.java
+* junitTests\src\test\java\com\facebook\login\widget\
+* junitTests\src\test\java\com\facebook\login\widget\LoginButtonTest.java
+* junitTests\src\test\java\com\facebook\messenger\
+* junitTests\src\test\java\com\facebook\messenger\MessengerUtilsTest.java
+* junitTests\src\test\java\com\facebook\share\
+* junitTests\src\test\java\com\facebook\share\internal\
+* junitTests\src\test\java\com\facebook\share\internal\ShareOpenGraphUtilityTest.java
+* junitTests\src\test\java\com\facebook\share\model\
+* junitTests\src\test\java\com\facebook\share\model\ShareLinkContentBuilderTest.java
+* junitTests\src\test\java\com\facebook\share\model\ShareModelTestUtility.java
+* junitTests\src\test\java\com\facebook\share\model\ShareOpenGraphActionBuilderTest.java
+* junitTests\src\test\java\com\facebook\share\model\ShareOpenGraphContentBuilderTest.java
+* junitTests\src\test\java\com\facebook\share\model\ShareOpenGraphObjectBuilderTest.java
+* junitTests\src\test\java\com\facebook\share\model\SharePhotoBuilderTest.java
+* junitTests\src\test\java\com\facebook\share\model\SharePhotoContentBuilderTest.java
+* junitTests\src\test\java\com\facebook\share\model\ShareVideoBuilderTest.java
+* junitTests\src\test\java\com\facebook\share\model\ShareVideoContentBuilderTest.java
+* junitTests\src\test\java\org\
+* junitTests\src\test\java\org\mockito\
+* junitTests\src\test\java\org\mockito\configuration\
+* junitTests\src\test\java\org\mockito\configuration\MockitoConfiguration.java
+* junitTests\src\test\test.iml
+* proguard-project.txt
+* tests\
+* tests\AndroidManifest.xml
+* tests\assets\
+* tests\assets\DarkScreen.mov
+* tests\build.gradle
+* tests\gen\
+* tests\gen\com\
+* tests\gen\com\facebook\
+* tests\gen\com\facebook\sdk\
+* tests\gen\com\facebook\sdk\tests\
+* tests\gen\com\facebook\sdk\tests\BuildConfig.java
+* tests\gen\com\facebook\sdk\tests\Manifest.java
+* tests\gen\com\facebook\sdk\tests\R.java
+* tests\proguard-project.txt
+* tests\res\
+* tests\res\values\
+* tests\res\values\strings.xml
+* tests\src\
+* tests\src\com\
+* tests\src\com\facebook\
+* tests\src\com\facebook\AsyncRequestTests.java
+* tests\src\com\facebook\BatchRequestTests.java
+* tests\src\com\facebook\FacebookActivityTestCase.java
+* tests\src\com\facebook\FacebookActivityTests.java
+* tests\src\com\facebook\FacebookAppLinkResolverTests.java
+* tests\src\com\facebook\FacebookTestCase.java
+* tests\src\com\facebook\FragmentTestCase.java
+* tests\src\com\facebook\GraphRequestBatchBridge.java
+* tests\src\com\facebook\GraphRequestTests.java
+* tests\src\com\facebook\GraphResponseBridge.java
+* tests\src\com\facebook\GraphUtilTests.java
+* tests\src\com\facebook\ProfileManagerTest.java
+* tests\src\com\facebook\RequestTests.java
+* tests\src\com\facebook\TestBlocker.java
+* tests\src\com\facebook\TestUserManagerTests.java
+* tests\src\com\facebook\TestUtils.java
+* tests\src\com\facebook\WaitForBroadcastReceiver.java
+* tests\src\com\facebook\appevents\
+* tests\src\com\facebook\appevents\AppEventsLoggerTests.java
+* tests\src\com\facebook\internal\
+* tests\src\com\facebook\internal\ImageResponseCacheTest.java
+* tests\src\com\facebook\internal\UtilityTest.java
+* tests\src\com\facebook\login\
+* tests\src\com\facebook\login\LoginClientTests.java
+* tests\src\com\facebook\widget\
+* tests\src\com\facebook\widget\FacebookDialogTests.java
+* tests\tests.iml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:22.2.1
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:22.2.1
+gson-2.2.4.jar => com.google.code.gson:gson:2.2.4
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.4.jar => version 2.2.4 in com.google.code.gson:gson:2.2.4
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:22.2.1]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In SlidingDrawerLib 1.0:
+* AndroidManifest.xml => slidingDrawerLib10\src\main\AndroidManifest.xml
+* assets\ => slidingDrawerLib10\src\main\assets
+* lint.xml => slidingDrawerLib10\lint.xml
+* res\ => slidingDrawerLib10\src\main\res\
+* src\ => slidingDrawerLib10\src\main\java\
+In WebViewMarker:
+* AndroidManifest.xml => webViewMarker\src\main\AndroidManifest.xml
+* assets\ => webViewMarker\src\main\assets
+* res\ => webViewMarker\src\main\res\
+* src\ => webViewMarker\src\main\java\
+In facebook:
+* AndroidManifest.xml => facebook\src\main\AndroidManifest.xml
+* assets\ => facebook\src\main\assets
+* libs\bolts-android-1.1.2.jar => facebook\libs\bolts-android-1.1.2.jar
+* lint.xml => facebook\lint.xml
+* res\ => facebook\src\main\res\
+* src\ => facebook\src\main\java\
+In NIVBible:
+* AndroidManifest.xml => nIVBible\src\main\AndroidManifest.xml
+* assets\ => nIVBible\src\main\assets\
+* libs\epublib-core-latest.jar => nIVBible\libs\epublib-core-latest.jar
+* libs\ormlite-android-4.48.jar => nIVBible\libs\ormlite-android-4.48.jar
+* libs\ormlite-core-4.48.jar => nIVBible\libs\ormlite-core-4.48.jar
+* libs\skyepub.jar => nIVBible\libs\skyepub.jar
+* libs\slf4j-android-1.6.1-RC1-sources.jar => nIVBible\libs\slf4j-android-1.6.1-RC1-sources.jar
+* lint.xml => nIVBible\lint.xml
+* res\ => nIVBible\src\main\res\
+* src\ => nIVBible\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

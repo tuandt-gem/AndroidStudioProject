@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Dimention Drawer Design Starts Defining -->
+    <!-- Drawer Dimention Offset -->
+    <dimen name="com_pears_dimen_drawer_offset">80dp</dimen>
+    <!-- Drawer  Dimention User Name Width And Height -->
+
+    <dimen name="com_pears_dimen_drawer_width_name_plate">160dp</dimen>
+    <dimen name="com_pears_dimen_drawer_height_name_plate">35dp</dimen>
+
+    <!-- Drawer Dimention User Prfile Pic -->
+
+    <dimen name="com_pears_dimen_drawer_size_profile_pic">105dp</dimen>
+
+    <!-- Drawer Dimention User Prfile Pic and name Background -->
+    <dimen name="com_pears_dimen_drawer_height_profile">135dp</dimen>
+
+    <!-- Drawer Dimention Height Drawer item -->
+
+    <dimen name="com_pears_dimen_drawer_height_item">49dp</dimen>
+
+    <!-- Drawer Dimention Margin Left Draer Item -->
+    <dimen name="com_pears_dimen_drawer_margin_left">30dp</dimen>
+    <dimen name="com_interpid_profile_height">180dp</dimen>
+    <dimen name="com_interpid_profile_width">180dp</dimen>
+
+</resources>

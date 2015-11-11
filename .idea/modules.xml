@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudioProject.iml" filepath="$PROJECT_DIR$/AndroidStudioProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nIVBible/nIVBible.iml" filepath="$PROJECT_DIR$/nIVBible/nIVBible.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidingDrawerLib10/slidingDrawerLib10.iml" filepath="$PROJECT_DIR$/slidingDrawerLib10/slidingDrawerLib10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webViewMarker/webViewMarker.iml" filepath="$PROJECT_DIR$/webViewMarker/webViewMarker.iml" />
+    </modules>
+  </component>
+</project>

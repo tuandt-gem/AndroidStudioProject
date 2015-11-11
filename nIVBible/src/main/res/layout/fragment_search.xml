@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/search_verse_search_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="top"
+        android:hint="@string/menu_search"
+        android:imeOptions="actionSearch"
+        android:lines="1"
+        android:maxLines="1"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/search_verse_count_tv"
+        style="@style/TextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_verse_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

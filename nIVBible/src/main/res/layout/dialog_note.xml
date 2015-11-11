@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_note_dialog"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/dialog_note_close_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@null"
+                android:text="Close"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Note"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/dialog_note_save_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="Save"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dialog_padding"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/dialog_note_verse_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:text="Genesis 1:1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/dialog_note_color_iv"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/dialog_note_text"
+                style="@style/TextNote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/dialog_note_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="left|top"
+            android:hint="@string/dialog_note_hint"
+            android:lines="@integer/max_note_lines"
+            android:maxLines="@integer/max_note_lines"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </LinearLayout>
+</LinearLayout>

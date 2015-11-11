@@ -1,0 +1,80 @@
+#
+# generated on 2015/10/29 05:52:22
+#
+# --table-start--
+dataClass=com.example.epub.selection.Selection
+tableName=selections
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=start
+columnName=start
+# --field-end--
+# --field-start--
+fieldName=end
+columnName=end
+# --field-end--
+# --field-start--
+fieldName=startVerseNumber
+columnName=start_verse_number
+# --field-end--
+# --field-start--
+fieldName=endVerseNumber
+columnName=end_verse_number
+# --field-end--
+# --field-start--
+fieldName=color
+# --field-end--
+# --field-start--
+fieldName=pageNumber
+columnName=pageNumber
+# --field-end--
+# --field-start--
+fieldName=fileName
+columnName=fileName
+# --field-end--
+# --field-start--
+fieldName=text
+columnName=text
+# --field-end--
+# --field-start--
+fieldName=note
+columnName=note
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.example.epub.db.html.Verse
+tableName=verse
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=mBookName
+columnName=book_name
+# --field-end--
+# --field-start--
+fieldName=mChapterTitle
+columnName=chapter_title
+# --field-end--
+# --field-start--
+fieldName=mChapterNumber
+columnName=chapter_number
+# --field-end--
+# --field-start--
+fieldName=mVerseNumber
+columnName=verse_number
+# --field-end--
+# --field-start--
+fieldName=mText
+columnName=text
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

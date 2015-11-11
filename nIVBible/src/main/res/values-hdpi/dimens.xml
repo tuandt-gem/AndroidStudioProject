@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="top_bar_height">60dp</dimen>
+    <dimen name="padding_left">11dp</dimen>
+    <dimen name="padding_top">13dp</dimen>
+    <dimen name="padding_right">14dp</dimen>
+    <dimen name="padding_bottom">13dp</dimen>
+    <dimen name="height_width_px">80dp</dimen>
+    <!-- Various Expandables Sizes -->
+    <dimen name="bitmap_top">5dp</dimen>
+    <dimen name="bitmap_right">2dp</dimen>
+    <dimen name="bitmap_bottom">5dp</dimen>
+    <dimen name="bitmap_left">2dp</dimen>
+    <!-- Various Text Sizes -->
+    <dimen name="text_size_extra_small">10sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_extra_large">20sp</dimen>
+    <dimen name="text_size_super_large">30sp</dimen>
+    <dimen name="text_size_extra_med_large">35sp</dimen>
+    <dimen name="text_size_super_med_large">40sp</dimen>
+    <dimen name="text_size_super_extra_large">70sp</dimen>
+    <dimen name="text_size_extra_large_med">25sp</dimen>
+
+    <!-- Various Paddings -->
+    <dimen name="padding_very_short">2dp</dimen>
+    <dimen name="padding_short">5dp</dimen>
+    <dimen name="padding_medium">7dp</dimen>
+    <dimen name="padding_normal">10dp</dimen>
+    <dimen name="padding_long">12dp</dimen>
+    <dimen name="padding_extra_long">15dp</dimen>
+    <!-- Various Margins -->
+    <dimen name="margin_very_short">5dp</dimen>
+    <dimen name="margin_short">10dp</dimen>
+    <dimen name="margin_meium">15dp</dimen>
+    <dimen name="margin_long">25dp</dimen>
+    <dimen name="margin_extra_long">30dp</dimen>
+    <dimen name="margin_extra_super_long">60dp</dimen>
+    <dimen name="margin_extra_long_minus">-20dp</dimen>
+    <dimen name="margin_extra_super_med_long_cost_break_down">120dp</dimen>
+    <dimen name="margin_extra_super_med_long">50dp</dimen>
+    <dimen name="margin_normal_six_months">20dp</dimen>
+    <dimen name="margin_normal_one_months">20dp</dimen>
+    <dimen name="margin_normal_one_months_box">20dp</dimen>
+    <dimen name="margin_seekbar">30dp</dimen>
+    <dimen name="margin_ivory_home">100dp</dimen>
+    <dimen name="margin_ivory_home_how">80dp</dimen>
+    <dimen name="margin_down_arrow">80dp</dimen>
+
+    <!-- Various Width -->
+    <dimen name="width_extra_min_low_checkbox">50dp</dimen>
+    <dimen name="width_extra_min_low_checkbox2">50dp</dimen>
+    <dimen name="width_extra_min">120dp</dimen>
+    <dimen name="width_half">240dp</dimen>
+    <dimen name="width_normal">300dp</dimen>
+    <dimen name="width_extra_min_low">100dp</dimen>
+    <dimen name="width_extra_large">360dp</dimen>
+    <dimen name="width_gridview">280dp</dimen>
+    <dimen name="width_extra_super">250dp</dimen>
+    <dimen name="width_popup_window">200dp</dimen>
+    <dimen name="dialog_width">300dp</dimen>
+    <!-- Various Height -->
+    <dimen name="height_of_Tick_6_months">70dp</dimen>
+    <dimen name="height_of_Tick_1_months">60dp</dimen>
+    <dimen name="height_edit_textbox">30dp</dimen>
+    <dimen name="height_extra_min_low_checkbox">50dp</dimen>
+    <dimen name="height_points_collected">220dp</dimen>
+    <dimen name="height_extra_min_low_checkbox2">70dp</dimen>
+    <dimen name="height_short">40dp</dimen>
+    <dimen name="width_ListHalf">260dp</dimen>
+    <dimen name="height_sppiner">40dp</dimen>
+    <dimen name="height_member_ships_card_small">170dp</dimen>
+    <dimen name="height_member_ships_card_big">220dp</dimen>
+    <dimen name="height_list_view">150dp</dimen>
+    <dimen name="height_extra_super">400dp</dimen>
+    <dimen name="height_extra_min">200dp</dimen>
+    <dimen name="height_half">400dp</dimen>
+    <dimen name="height_normal">480dp</dimen>
+    <dimen name="height_extra_large">600dp</dimen>
+    <dimen name="height_google_map_info">60dp</dimen>
+    <dimen name="width_google_map_info">60dp</dimen>
+
+    <!-- Various Text Radius -->
+    <dimen name="radius_small">2dp</dimen>
+    <dimen name="radius_medium">4dp</dimen>
+    <dimen name="radius_normal">6dp</dimen>
+    <dimen name="radius_large">8dp</dimen>
+
+   
+
+</resources>

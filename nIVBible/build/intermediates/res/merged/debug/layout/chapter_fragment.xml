@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#dfdfdf"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_very_short"
+        android:divider="#373737"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/layout/chapter_fragment.xml -->

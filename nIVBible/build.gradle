@@ -1,0 +1,55 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.nivbible"
+        minSdkVersion 11
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':slidingDrawerLib10')
+    compile project(':webViewMarker')
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile files('libs/epublib-core-latest.jar')
+    //    compile files('libs/slf4j-android-1.6.1-RC1.jar')
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.+'
+    compile 'com.j256.ormlite:ormlite-android:4.48'
+    compile 'com.j256.ormlite:ormlite-core:4.48'
+    compile 'org.slf4j:slf4j-android:1.7.12'
+    compile 'org.jsoup:jsoup:1.8.3'
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        transitive = true;
+    }
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'jp.wasabeef:recyclerview-animators:1.2.2'
+}

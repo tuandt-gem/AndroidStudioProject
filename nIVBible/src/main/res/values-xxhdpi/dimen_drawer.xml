@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="height_setting_profile">100dp</dimen>
+    <dimen name="width_setting_profile">100dp</dimen>
+
+    <!-- setting line -->
+    <dimen name="width_setting_line">320dp</dimen>
+    <dimen name="height_google_map">43dp</dimen>
+    <dimen name="width_google_map">43dp</dimen>
+    <dimen name="height_player_challenge">110dp</dimen>
+    <dimen name="width_player_challenge">110dp</dimen>
+
+</resources>

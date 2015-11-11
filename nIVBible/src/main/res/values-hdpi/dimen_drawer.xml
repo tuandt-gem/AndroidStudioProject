@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- setting pic profile. -->
+
+    <dimen name="height_setting_profile">90dp</dimen>
+    <dimen name="width_setting_profile">90dp</dimen>
+
+    <!-- setting line -->
+    <dimen name="width_setting_line">200dp</dimen>
+    <dimen name="height_google_map">40dp</dimen>
+    <dimen name="width_google_map">40dp</dimen>
+    <dimen name="height_player_challenge">88dp</dimen>
+    <dimen name="width_player_challenge">88dp</dimen>
+
+</resources>

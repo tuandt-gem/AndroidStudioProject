@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text Size -->
+
+    <dimen name="com_pears_dimen_browse_single_feed_text_size_description">10sp</dimen>
+    <dimen name="com_pears_dimen_browse_single_feed_text_size_counter">12sp</dimen>
+    <dimen name="com_pears_dimen_browse_single_feed_text_size_user_name">14sp</dimen>
+
+    <!-- Pic Sizes -->
+    <dimen name="com_pears_dimen_browse_single_feed_size_pic_counter">37.3dp</dimen>
+    <dimen name="com_pears_dimen_browse_profiel_size_likes">74.66dp</dimen>
+
+</resources>

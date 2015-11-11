@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/serachBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#717171"
+        android:gravity="center"
+        android:padding="@dimen/padding_normal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/layoutId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_box"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_search_fragment_reader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_short"
+                android:layout_weight="5"
+                android:background="@null"
+                android:ems="10"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="@dimen/padding_short"
+                android:singleLine="true"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/img_cancel_search_fragment_reader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/padding_short"
+                android:src="@drawable/search_close_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltWebContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.example.EpubProject.EpubWebView30
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <WebView
+            android:id="@+id/webviewHighlight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#717171"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_medium">
+
+        <ImageView
+            android:id="@+id/left_arrow_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/left_arrow_key" />
+
+        <TextView
+            android:id="@+id/text_view_total_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/right_arrow_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/right_arrow_key" />
+
+        <Button
+            android:id="@+id/btn_chapters"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="2"
+            android:text="Chapters"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/layout/background_fragment.xml -->

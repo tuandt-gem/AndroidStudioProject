@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nivbible"
+    android:versionCode="1"
+    android:versionName="1.0.4" >
+
+    <uses-sdk android:minSdkVersion="11" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.nivbible.EpubReader"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.EpubProject.SpashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.EpubProject.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="com.example.EpubProject.MainActivity" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
+<!--         <provider android:authorities="com.facebook.app.FacebookContentProvider148006165553646" -->
+<!--           android:name="com.facebook.FacebookContentProvider" -->
+<!--           android:exported="true"/> -->
+
+        <activity android:name="com.example.epub.db.GenerateActivity"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2f05863b5cfe9aa5177a69c6abb72b3c45e24dae" />
+    </application>
+
+</manifest>

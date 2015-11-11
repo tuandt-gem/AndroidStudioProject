@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/color.xml -->
+    <eat-comment/>
+    <color name="black">#000</color>
+    <color name="blue">#278be9</color>
+    <color name="blue_trans">#02078be9</color>
+    <color name="dark_gray">#666666</color>
+    <color name="holo_dark">#cbcbcb</color>
+    <color name="holo_light">#ebebeb</color>
+    <color name="light_gray">#278be9</color>
+    <color name="red">#ff0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#fff</color>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bitmap_bottom">5dp</dimen>
+    <dimen name="bitmap_left">2dp</dimen>
+    <dimen name="bitmap_right">2dp</dimen>
+    <dimen name="bitmap_top">5dp</dimen>
+    <dimen name="challenge_player_ratebar">30dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimen_drawer_broswe_single_feed.xml -->
+    <eat-comment/>
+    <dimen name="com_pears_dimen_browse_profiel_size_likes">43.33dp</dimen>
+    <dimen name="com_pears_dimen_browse_single_feed_size_pic_counter">23.3dp</dimen>
+    <dimen name="com_pears_dimen_browse_single_feed_text_size_counter">12sp</dimen>
+    <dimen name="com_pears_dimen_browse_single_feed_text_size_description">10sp</dimen>
+    <dimen name="com_pears_dimen_browse_single_feed_text_size_user_name">14sp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimen_drawer_browse_feed.xml -->
+    <eat-comment/>
+    <dimen name="com_pears_dimen_drawer_height_item">44dp</dimen>
+    <dimen name="com_pears_dimen_drawer_height_name_plate">30dp</dimen>
+    <dimen name="com_pears_dimen_drawer_height_profile">100dp</dimen>
+    <dimen name="com_pears_dimen_drawer_margin_left">16dp</dimen>
+    <dimen name="com_pears_dimen_drawer_offset">76dp</dimen>
+    <dimen name="com_pears_dimen_drawer_size_profile_pic">80dp</dimen>
+    <dimen name="com_pears_dimen_drawer_width_name_plate">140dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="dialog_width">280dp</dimen>
+    <dimen name="height_card">100dp</dimen>
+    <dimen name="height_edit_textbox">30dp</dimen>
+    <dimen name="height_extra_large">200dp</dimen>
+    <dimen name="height_extra_min">200dp</dimen>
+    <dimen name="height_extra_min_low_checkbox">50dp</dimen>
+    <dimen name="height_extra_min_low_checkbox2">70dp</dimen>
+    <dimen name="height_extra_super">400dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimen_drawer.xml -->
+    <eat-comment/>
+    <dimen name="height_google_map">42dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="height_google_map_info">60dp</dimen>
+    <dimen name="height_half">120dp</dimen>
+    <dimen name="height_list_view">130dp</dimen>
+    <dimen name="height_member_ships_card_big">1800dp</dimen>
+    <dimen name="height_member_ships_card_layout_big">190dp</dimen>
+    <dimen name="height_member_ships_card_layout_small">170dp</dimen>
+    <dimen name="height_member_ships_card_small">160dp</dimen>
+    <dimen name="height_normal">150dp</dimen>
+    <dimen name="height_of_Tick_1_months">100dp</dimen>
+    <dimen name="height_of_Tick_6_months">100dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimen_drawer.xml -->
+    <eat-comment/>
+    <dimen name="height_player_challenge">85dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="height_points_collected">200dp</dimen>
+    <dimen name="height_rate_bar">18.5dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimen_drawer.xml -->
+    <eat-comment/>
+    <dimen name="height_setting_profile">60dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="height_sppiner">30dp</dimen>
+    <dimen name="height_width_px">48dp</dimen>
+    <dimen name="margin_down_arrow">80dp</dimen>
+    <dimen name="margin_extra_long">20dp</dimen>
+    <dimen name="margin_extra_long_minus">-20dp</dimen>
+    <dimen name="margin_extra_super_med_long">50dp</dimen>
+    <dimen name="margin_ivory_home">80dp</dimen>
+    <dimen name="margin_ivory_home_how">60dp</dimen>
+    <dimen name="margin_long">15dp</dimen>
+    <dimen name="margin_meium">8dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_normal_one_months">20dp</dimen>
+    <dimen name="margin_normal_one_months_box">30dp</dimen>
+    <dimen name="margin_normal_six_months">20dp</dimen>
+    <dimen name="margin_seekbar">40dp</dimen>
+    <dimen name="margin_short">6dp</dimen>
+    <dimen name="margin_very_short">4dp</dimen>
+    <dimen name="padding_bottom">8dp</dimen>
+    <dimen name="padding_extra_long">14dp</dimen>
+    <dimen name="padding_left">5dp</dimen>
+    <dimen name="padding_long">10dp</dimen>
+    <dimen name="padding_medium">6dp</dimen>
+    <dimen name="padding_normal">8dp</dimen>
+    <dimen name="padding_right">10dp</dimen>
+    <dimen name="padding_short">4dp</dimen>
+    <dimen name="padding_top">8dp</dimen>
+    <dimen name="padding_very_short">2dp</dimen>
+    <dimen name="radius_large">8dp</dimen>
+    <dimen name="radius_medium">4dp</dimen>
+    <dimen name="radius_normal">6dp</dimen>
+    <dimen name="radius_small">2dp</dimen>
+    <dimen name="setting_player_ratebar">40dp</dimen>
+    <dimen name="text_size_extra_large">20sp</dimen>
+    <dimen name="text_size_extra_large_med">25sp</dimen>
+    <dimen name="text_size_extra_med_large">30sp</dimen>
+    <dimen name="text_size_extra_small">10sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_super_extra_large">55sp</dimen>
+    <dimen name="text_size_super_large">30sp</dimen>
+    <dimen name="text_size_super_med_large">40sp</dimen>
+    <dimen name="top_bar_height">60dp</dimen>
+    <dimen name="width_ListHalf">250dp</dimen>
+    <dimen name="width_card">200dp</dimen>
+    <dimen name="width_extra_large">260dp</dimen>
+    <dimen name="width_extra_min">80dp</dimen>
+    <dimen name="width_extra_min_low">90dp</dimen>
+    <dimen name="width_extra_min_low_checkbox">50dp</dimen>
+    <dimen name="width_extra_min_low_checkbox2">50dp</dimen>
+    <dimen name="width_extra_super">250dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimen_drawer.xml -->
+    <eat-comment/>
+    <dimen name="width_google_map">42dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="width_google_map_info">60dp</dimen>
+    <dimen name="width_gridview">280dp</dimen>
+    <dimen name="width_half">160dp</dimen>
+    <dimen name="width_normal">200dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimen_drawer.xml -->
+    <eat-comment/>
+    <dimen name="width_player_challenge">85dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="width_popup_window">220dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/dimen_drawer.xml -->
+    <eat-comment/>
+    <dimen name="width_setting_line">220dp</dimen>
+    <dimen name="width_setting_profile">60dp</dimen>
+    <!-- From: file:/D:/Project/Amplified/AndroidStudioProject/nIVBible/src/main/res/values-mdpi/color.xml -->
+    <eat-comment/>
+    <drawable name="actiontransparent">#00000000</drawable>
+    <drawable name="transarent_game">#00000000</drawable>
+</resources>
