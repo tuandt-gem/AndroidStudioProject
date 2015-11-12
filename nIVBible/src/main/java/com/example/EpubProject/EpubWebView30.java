@@ -133,10 +133,10 @@ public class EpubWebView30 extends EpubWebView {
         }
 
         // xhtml = getFilterAgain(xhtml);
-        // TODO Do not replace <a> by <span> and do not add style
         xhtml = xhtml.replaceAll("<a", "<span");
         xhtml = xhtml.replaceAll("</a", "</span");
 
+        // TODO Do not add style
 //        String style = "<style type='" + "text/css"
 //                + "'> span {font-family: 'Arial';text-transform: none;} * {-webkit-touch-callout: all;-webkit-user-select: all;-khtml-user-select: all;-moz-user-select: all;-ms-user-select: all;user-select: all;}</style>";
 //        xhtml = xhtml.replaceAll("</head>", style + "</head>");
