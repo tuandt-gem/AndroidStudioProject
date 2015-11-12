@@ -168,7 +168,7 @@ public class ParserAsync extends AsyncTask<String, Void, Void> {
      */
     private int getVerseNumber(String bookName, Element pTag) {
         String html = pTag.text();
-        if (bookName.equals(Constants.NIV_1984)
+        if (bookName.equals(Constants.NIV)
                 || bookName.equals(Constants.AKUAPEM)) {
             // Verse format example "Gen 1:1"
             if (html.length() <= 6) {

@@ -151,10 +151,10 @@ ADDED from D:\Project\Amplified\AndroidStudioProject\nIVBible\src\main\AndroidMa
 		ADDED from D:\Project\Amplified\AndroidStudioProject\nIVBible\src\main\AndroidManifest.xml:52:13-72
 	android:name
 		ADDED from D:\Project\Amplified\AndroidStudioProject\nIVBible\src\main\AndroidManifest.xml:49:13-57
-activity#com.example.epub.db.GenerateActivity
-ADDED from D:\Project\Amplified\AndroidStudioProject\nIVBible\src\main\AndroidManifest.xml:58:9-72
+activity#com.example.epub.db.DatabaseGenerateActivity
+ADDED from D:\Project\Amplified\AndroidStudioProject\nIVBible\src\main\AndroidManifest.xml:58:9-80
 	android:name
-		ADDED from D:\Project\Amplified\AndroidStudioProject\nIVBible\src\main\AndroidManifest.xml:58:19-70
+		ADDED from D:\Project\Amplified\AndroidStudioProject\nIVBible\src\main\AndroidManifest.xml:58:19-78
 meta-data#io.fabric.ApiKey
 ADDED from D:\Project\Amplified\AndroidStudioProject\nIVBible\src\main\AndroidManifest.xml:59:9-61:72
 	android:value

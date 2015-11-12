@@ -133,9 +133,9 @@ public class EpubWebView30 extends EpubWebView {
         }
 
         // xhtml = getFilterAgain(xhtml);
-        // TODO Do not replace <a> by <span> and do not ađ style
-//        xhtml = xhtml.replaceAll("<a", "<span");
-//        xhtml = xhtml.replaceAll("</a", "</span");
+        // TODO Do not replace <a> by <span> and do not add style
+        xhtml = xhtml.replaceAll("<a", "<span");
+        xhtml = xhtml.replaceAll("</a", "</span");
 
 //        String style = "<style type='" + "text/css"
 //                + "'> span {font-family: 'Arial';text-transform: none;} * {-webkit-touch-callout: all;-webkit-user-select: all;-khtml-user-select: all;-moz-user-select: all;-ms-user-select: all;user-select: all;}</style>";
@@ -180,43 +180,10 @@ public class EpubWebView30 extends EpubWebView {
                 "\n<script type='text/javascript' src='file:///android_asset/rangy-selectionsaverestore.js'></script>\n"
                         + "</head>");
 
-        // CSS
-//        loadCss();
-//        injectCSS();
-
         // xhtml = xhtml.replaceAll("</head>", "</script>" + "</head>");
 
         loadDataWithBaseURL(null, xhtml, "text/html", "UTF-8", null);// "charset
         // utf-8"
-    }
-
-    private void loadCss() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("<HTML><HEAD><LINK href=\"selections.css\" type=\"text/css\" rel=\"stylesheet\"/></HEAD><body>");
-        sb.append("</body></HTML>");
-        this.loadDataWithBaseURL("file:///android_asset/", sb.toString(), "text/html", "utf-8", null);
-    }
-
-    // Inject CSS method: read style.css from assets folder
-// Append stylesheet to document head
-    private void injectCSS() {
-        try {
-            InputStream inputStream = getContext().getAssets().open("selections.css");
-            byte[] buffer = new byte[inputStream.available()];
-            inputStream.read(buffer);
-            inputStream.close();
-            String encoded = Base64.encodeToString(buffer, Base64.NO_WRAP);
-            this.loadUrl("javascript:(function() {" +
-                    "var parent = document.getElementsByTagName('head').item(0);" +
-                    "var style = document.createElement('style');" +
-                    "style.type = 'text/css';" +
-                    // Tell the browser to BASE64-decode the string into your script !!!
-                    "style.innerHTML = window.atob('" + encoded + "');" +
-                    "parent.appendChild(style)" +
-                    "})()");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
 //    public String getHighlightBodyStart() {

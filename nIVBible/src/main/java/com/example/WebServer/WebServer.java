@@ -63,9 +63,7 @@ public class WebServer {
             mHttpService.handleRequest(serverConnection, mHttpContext);
             serverConnection.close();
             serverConnection.shutdown();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (HttpException e) {
+        } catch (IOException | HttpException e) {
             e.printStackTrace();
         }
     }

@@ -14,7 +14,7 @@ import com.nivbible.R;
  * To generate .db file
  * Created by neo on 11/10/2015.
  */
-public class GenerateActivity extends Activity implements ParserAsync.IOnComplete{
+public class DatabaseGenerateActivity extends Activity implements ParserAsync.IOnComplete{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +28,7 @@ public class GenerateActivity extends Activity implements ParserAsync.IOnComplet
     public void onComplete() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Success");
-        builder.setMessage("Generate Databse successful!");
+        builder.setMessage("Generate Database successful!");
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

@@ -305,6 +305,8 @@ public abstract class FilterableAdapter<T, V extends RecyclerView.ViewHolder> ex
 //        return false;
 //    }
 
+    protected abstract List<T> filterFromAnotherResource(String search);
+
     /**
      * <p>
      * An array filter constrains the content of the array adapter with a prefix. Each item that does not start with the
@@ -314,6 +316,53 @@ public abstract class FilterableAdapter<T, V extends RecyclerView.ViewHolder> ex
     protected class TextFilter extends Filter {
         @Override
         protected FilterResults performFiltering(CharSequence prefix) {
+//            return filterWithInList(prefix);
+            return filterInAnotherResource(prefix);
+        }
+
+        private FilterResults filterInAnotherResource(CharSequence prefix) {
+            FilterResults results = new FilterResults();
+
+            if (mOriginalValues == null) {
+                synchronized (LOCK) {
+                    mOriginalValues = new ArrayList<T>(mObjects);
+                }
+            }
+
+            if (prefix == null || prefix.length() == 0) {
+                ArrayList<T> list;
+                synchronized (LOCK) {
+                    list = new ArrayList<T>(mOriginalValues);
+                }
+                results.values = list;
+                results.count = list.size();
+            } else {
+                String prefixString = prefix.toString().toLowerCase();
+
+//                ArrayList<T> values;
+//                synchronized (LOCK) {
+//                    values = new ArrayList<T>(mOriginalValues);
+//                }
+//
+//                final int count = values.size();
+//                final ArrayList<T> newValues = new ArrayList<T>();
+//
+//                for (int i = 0; i < count; i++) {
+//                    final T value = values.get(i);
+//                    if (filterObject(value, prefixString)) {
+//                        newValues.add(value);
+//                    }
+//                }
+                List<T> newValues = filterFromAnotherResource(prefixString);
+
+                results.values = newValues;
+                results.count = newValues.size();
+            }
+
+            return results;
+        }
+
+        private FilterResults filterWithInList(CharSequence prefix) {
             FilterResults results = new FilterResults();
 
             if (mOriginalValues == null) {
@@ -353,6 +402,7 @@ public abstract class FilterableAdapter<T, V extends RecyclerView.ViewHolder> ex
 
             return results;
         }
+
 
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {

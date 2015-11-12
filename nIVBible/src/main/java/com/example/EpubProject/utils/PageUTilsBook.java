@@ -100,6 +100,75 @@ public class PageUTilsBook {
         ListPageBookEnglish.add(new ListPageBook("Revelation", 1167));
     }
 
+    private static void getSwahili() {
+        ListPageBookSwahili.add(new ListPageBook("Mwanzo", 0));
+        ListPageBookSwahili.add(new ListPageBook("Kutoka", 50));
+        ListPageBookSwahili.add(new ListPageBook("Mambo ya Walawi", 90));
+        ListPageBookSwahili.add(new ListPageBook("Hesabu", 117));
+        ListPageBookSwahili.add(new ListPageBook("Kumbukumbu la Torati", 153));
+        ListPageBookSwahili.add(new ListPageBook("Yoshua", 187));
+        ListPageBookSwahili.add(new ListPageBook("Waamuzi", 211));
+        ListPageBookSwahili.add(new ListPageBook("Ruthu", 232));
+        ListPageBookSwahili.add(new ListPageBook("1 Samweli", 236));
+        ListPageBookSwahili.add(new ListPageBook("2 Samweli", 267));
+        ListPageBookSwahili.add(new ListPageBook("1 Wafalme", 291));
+        ListPageBookSwahili.add(new ListPageBook("2 Wafalme", 313));
+        ListPageBookSwahili.add(new ListPageBook("1 Nyakati", 338));
+        ListPageBookSwahili.add(new ListPageBook("2 Nyakati", 367));
+        ListPageBookSwahili.add(new ListPageBook("Ezra", 403));
+        ListPageBookSwahili.add(new ListPageBook("Nehemia", 413));
+        ListPageBookSwahili.add(new ListPageBook("Esta", 426));
+        ListPageBookSwahili.add(new ListPageBook("Ayubu", 436));
+        ListPageBookSwahili.add(new ListPageBook("Zaburi", 478));
+        ListPageBookSwahili.add(new ListPageBook("Methali", 628));
+        ListPageBookSwahili.add(new ListPageBook("Mhubiri", 659));
+        ListPageBookSwahili.add(new ListPageBook("Wimbo wa Sulemani", 671));
+        ListPageBookSwahili.add(new ListPageBook("Isaya", 679));
+        ListPageBookSwahili.add(new ListPageBook("Yeremia", 745));
+        ListPageBookSwahili.add(new ListPageBook("Maombolezo", 797));
+        ListPageBookSwahili.add(new ListPageBook("Ezekieli", 802));
+        ListPageBookSwahili.add(new ListPageBook("Danieli", 850));
+        ListPageBookSwahili.add(new ListPageBook("Hosea", 862));
+        ListPageBookSwahili.add(new ListPageBook("Yoeli", 876));
+        ListPageBookSwahili.add(new ListPageBook("Amosi", 879));
+        ListPageBookSwahili.add(new ListPageBook("Obadia", 888));
+        ListPageBookSwahili.add(new ListPageBook("Yona", 889));
+        ListPageBookSwahili.add(new ListPageBook("Mika", 893));
+        ListPageBookSwahili.add(new ListPageBook("Nahumu", 900));
+        ListPageBookSwahili.add(new ListPageBook("Habakuki", 903));
+        ListPageBookSwahili.add(new ListPageBook("Sefania", 906));
+        ListPageBookSwahili.add(new ListPageBook("Hagai", 909));
+        ListPageBookSwahili.add(new ListPageBook("Zekaria", 911));
+        ListPageBookSwahili.add(new ListPageBook("Malaki", 925));
+        ListPageBookSwahili.add(new ListPageBook("Mathayo", 929));
+        ListPageBookSwahili.add(new ListPageBook("Marko", 957));
+        ListPageBookSwahili.add(new ListPageBook("Luka", 973));
+        ListPageBookSwahili.add(new ListPageBook("Yohana", 997));
+        ListPageBookSwahili.add(new ListPageBook("Matendo ya Mitume", 1018));
+        ListPageBookSwahili.add(new ListPageBook("Waroma", 1046));
+        ListPageBookSwahili.add(new ListPageBook("1 Wakorintho", 1062));
+        ListPageBookSwahili.add(new ListPageBook("2 Wakorintho", 1078));
+        ListPageBookSwahili.add(new ListPageBook("Wagalatia", 1091));
+        ListPageBookSwahili.add(new ListPageBook("Waefeso", 1097));
+        ListPageBookSwahili.add(new ListPageBook("Wafilipi", 1103));
+        ListPageBookSwahili.add(new ListPageBook("Wakolosai", 1107));
+        ListPageBookSwahili.add(new ListPageBook("1 Wathesalonike", 1111));
+        ListPageBookSwahili.add(new ListPageBook("2 Wathesalonike", 1116));
+        ListPageBookSwahili.add(new ListPageBook("1 Timotheo", 1119));
+        ListPageBookSwahili.add(new ListPageBook("2 Timotheo", 1125));
+        ListPageBookSwahili.add(new ListPageBook("Tito", 1129));
+        ListPageBookSwahili.add(new ListPageBook("Filemoni", 1132));
+        ListPageBookSwahili.add(new ListPageBook("Waebrania", 1133));
+        ListPageBookSwahili.add(new ListPageBook("Yakobo", 1146));
+        ListPageBookSwahili.add(new ListPageBook("1 Petro", 1151));
+        ListPageBookSwahili.add(new ListPageBook("2 Petro", 1156));
+        ListPageBookSwahili.add(new ListPageBook("1 Yohana", 1159));
+        ListPageBookSwahili.add(new ListPageBook("2 Yohana", 1164));
+        ListPageBookSwahili.add(new ListPageBook("3 Yohana", 1165));
+        ListPageBookSwahili.add(new ListPageBook("Yuda", 1166));
+        ListPageBookSwahili.add(new ListPageBook("Ufunuo", 1167));
+    }
+
     private static void getEq() {
         ListPageBookAkuapem.add(new ListPageBook("Genesis", 0));
         ListPageBookAkuapem.add(new ListPageBook("Exodus", 50));
@@ -176,6 +245,13 @@ public class PageUTilsBook {
         return ListPageBookEnglish;
     }
 
+    public static List<ListPageBook> getListPageBookSwahili() {
+        if (ListPageBookSwahili.size() == 0) {
+            getSwahili();
+        }
+        return ListPageBookSwahili;
+    }
+
     public static void setListPageBookEnglis(
             List<ListPageBook> ListPageBookEnglis) {
         PageUTilsBook.ListPageBookEnglish = ListPageBookEnglis;
@@ -196,7 +272,9 @@ public class PageUTilsBook {
         int index = Constants.POS0_START;
         int len = getListPageBookEnglis().size();
         for (int i = 0; i < len; i++) {
-            if (verse.getChapterTitle().toLowerCase().contains(getListPageBookEnglis().get(i).nameBook.toLowerCase())) {
+
+            if (verse.getChapterTitle().toLowerCase().contains(getListPageBookEnglis().get(i).nameBook.toLowerCase())
+                    || verse.getChapterTitle().toLowerCase().contains(getListPageBookSwahili().get(i).nameBook.toLowerCase())) {
                 index += getListPageBookEnglis().get(i).pageCountBook;
                 break;
             }
@@ -217,5 +295,5 @@ public class PageUTilsBook {
 
     private static List<ListPageBook> ListPageBookEnglish = new ArrayList<>();
     private static List<ListPageBook> ListPageBookAkuapem = new ArrayList<>();
-
+    private static List<ListPageBook> ListPageBookSwahili= new ArrayList<>();
 }

@@ -605,6 +605,7 @@ public class ReaderFragment extends Fragment implements IResourceSource, launchC
         }
 
         onListChapterResultSele(pos);
+        Log.e("@@@", "pos=" + pos);
         if (preferencesBookNumber.getBoolean("chapter", true)) {
 
             if (preferencesBook.getInt("position", Constants.POS0_START) == Constants.POS0_START) {
@@ -630,21 +631,26 @@ public class ReaderFragment extends Fragment implements IResourceSource, launchC
     }
 
     @Override
-    public boolean onShareClick() {
+    public boolean onShareClick(final Context context) {
+        if (context == null) {
+            return false;
+        }
+
         mEpubWebView.setDrawingCacheEnabled(true);
 
         mEpubWebView.post(new Runnable() {
 
             @Override
             public void run() {
-                shareImage();
+                shareImage(context);
             }
         });
+
         return true;
     }
 
     @SuppressWarnings("ResultOfMethodCallIgnored")
-    private void shareImage() {
+    private void shareImage(Context context) {
         Bitmap screenShot = mEpubWebView.getDrawingCache();
         String file_path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/SharePage";
         File dir = new File(file_path);
@@ -662,7 +668,7 @@ public class ReaderFragment extends Fragment implements IResourceSource, launchC
             fOut.close();
 
             if (!file.exists()) {
-                Toast.makeText(mActivity, "Failed to share", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Failed to share", Toast.LENGTH_SHORT).show();
                 return;
             }
         } catch (IOException e) {
@@ -674,7 +680,7 @@ public class ReaderFragment extends Fragment implements IResourceSource, launchC
             shareIntent.setAction(Intent.ACTION_SEND);
             shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file));
             shareIntent.setType("image/*");
-            startActivity(Intent.createChooser(shareIntent, "Share"));
+            if (context != null) context.startActivity(Intent.createChooser(shareIntent, "Share"));
         } catch (ActivityNotFoundException e) {
             e.printStackTrace();
         }

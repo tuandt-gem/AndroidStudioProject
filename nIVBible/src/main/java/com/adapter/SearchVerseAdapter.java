@@ -2,6 +2,7 @@ package com.adapter;
 
 import android.content.Context;
 import android.graphics.Typeface;
+import android.preference.PreferenceManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.Spannable;
@@ -16,13 +17,17 @@ import android.widget.Filter;
 import android.widget.TextView;
 
 import com.example.EpubProject.Utility;
+import com.example.EpubProject.utils.Constants;
+import com.example.epub.db.DbHelper;
 import com.example.epub.db.html.Verse;
 import com.nivbible.R;
 
 import org.jsoup.helper.StringUtil;
 
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * Search verse adapter
@@ -34,6 +39,7 @@ public class SearchVerseAdapter extends FilterableAdapter<Verse, SearchVerseAdap
     private IOnVerseSelected mOnVerseSelected;
     private IOnFilter mOnFilter;
     private String mKeyText;
+    private Context mContext;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -58,6 +64,7 @@ public class SearchVerseAdapter extends FilterableAdapter<Verse, SearchVerseAdap
         this.mOnVerseSelected = onVerseSelected;
         mFilterVerses = new ArrayList<>();
         mOnFilter = onFilter;
+        mContext = context;
     }
 
     @Override
@@ -112,6 +119,34 @@ public class SearchVerseAdapter extends FilterableAdapter<Verse, SearchVerseAdap
     @Override
     protected boolean filterObject(Verse myObject, String constraint) {
         return myObject.getText().toLowerCase().contains(constraint.toLowerCase());
+    }
+
+    @Override
+    protected List<Verse> filterFromAnotherResource(String search) {
+//        mFilterVerses.clear();
+//        for (Verse verse : mAllVerses) {
+//            if (verse.getText().toLowerCase().contains(text.toLowerCase())) {
+//                mFilterVerses.add(verse);
+//            }
+//        }
+
+        DbHelper db = new DbHelper(mContext);
+        db.getReadableDatabase().beginTransaction();
+
+        String bookName = PreferenceManager.getDefaultSharedPreferences(mContext)
+                .getString(Constants.SELECTED_FILE, Constants.FILE_NAME[0]);
+
+        List<Verse> verses = new ArrayList<>();
+        try {
+            verses = db.searchVerses(bookName, search);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        db.getReadableDatabase().endTransaction();
+
+        Log.e("@@@", "versesverses=" + verses.size());
+        return verses;
     }
 
     @Override

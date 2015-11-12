@@ -55,7 +55,7 @@
 <!--           android:name="com.facebook.FacebookContentProvider" -->
 <!--           android:exported="true"/> -->
 
-        <activity android:name="com.example.epub.db.GenerateActivity"/>
+        <activity android:name="com.example.epub.db.DatabaseGenerateActivity"/>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="2f05863b5cfe9aa5177a69c6abb72b3c45e24dae" />

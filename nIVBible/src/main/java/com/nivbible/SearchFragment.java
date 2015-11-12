@@ -75,7 +75,12 @@ public class SearchFragment extends Fragment
      * Get verses from DB
      */
     private void initVerses() {
-        new InitAsync().execute();
+//        new InitAsync().execute();
+        SearchVerseAdapter verseAdapter = new SearchVerseAdapter(getActivity(), new ArrayList<Verse>(), SearchFragment.this, SearchFragment.this);
+        versesRecyclerView.setAdapter(verseAdapter);
+
+        searchVerseEt.addTextChangedListener(verseAdapter);
+        onFilter(0);
     }
 
 
@@ -90,7 +95,9 @@ public class SearchFragment extends Fragment
 
     @Override
     public void onFilter(int count) {
-        verseCountTv.setText(String.format(getString(R.string.verse_count_format), count));
+        if (isAdded()) {
+            verseCountTv.setText(String.format(getString(R.string.verse_count_format), count));
+        }
     }
 
     private class InitAsync extends AsyncTask<Void, Void, List<Verse>> {

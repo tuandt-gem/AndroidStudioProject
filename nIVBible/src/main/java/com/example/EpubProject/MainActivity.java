@@ -25,6 +25,7 @@ import com.yalantis.contextmenu.lib.interfaces.OnMenuItemClickListener;
 import com.yalantis.contextmenu.lib.interfaces.OnMenuItemLongClickListener;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -274,10 +275,12 @@ public class MainActivity extends FragmentActivity
             visibleBookMark(false);
             visibleReader(false);
             visibleSearch(false);
+            visibleNightMode(false);
         } else {
             visibleBookMark(true);
             visibleReader(true);
             visibleSearch(true);
+            visibleNightMode(true);
         }
 
         if (isbookmarkwa) {
@@ -335,7 +338,7 @@ public class MainActivity extends FragmentActivity
             isbookmarkwa = false;
             if (onShareListner != null) {
                 // TwiBible.getDrawerInstanse(this).select(0);
-                isSelected = onShareListner.onShareClick();
+                isSelected = onShareListner.onShareClick(this);
             }
 
             if (!isSelected)
@@ -431,7 +434,7 @@ public class MainActivity extends FragmentActivity
     private IOnShareListner onShareListner;
 
     public interface IOnShareListner {
-        public boolean onShareClick();
+        public boolean onShareClick(Context context);
 
     }
 
