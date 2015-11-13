@@ -119,7 +119,7 @@ public class SearchFragment extends Fragment
             try {
                 DbHelper db = new DbHelper(getActivity());
                 return db.getAllVerses(bookName);
-            } catch (SQLException e) {
+            } catch (RuntimeException e) {
                 e.printStackTrace();
             }
 
@@ -132,7 +132,7 @@ public class SearchFragment extends Fragment
             SearchVerseAdapter verseAdapter = new SearchVerseAdapter(getActivity(), verses, SearchFragment.this, SearchFragment.this);
             versesRecyclerView.setAdapter(verseAdapter);
 
-            searchVerseEt.addTextChangedListener(verseAdapter);
+              searchVerseEt.addTextChangedListener(verseAdapter);
             onFilter(0);
 
             if (mProgressDialog != null) {

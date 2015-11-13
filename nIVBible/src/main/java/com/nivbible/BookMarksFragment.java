@@ -78,6 +78,7 @@ public class BookMarksFragment extends android.support.v4.app.Fragment
 		((MainActivity) EpubReader.getActivityIsntanse()).visibleDelete(false);
 		((MainActivity) EpubReader.getActivityIsntanse()).visibleReader(true);
 		((MainActivity) EpubReader.getActivityIsntanse()).visibleSearch(false);
+		((MainActivity) EpubReader.getActivityIsntanse()).visibleNightMode(false);
 		((MainActivity) EpubReader.getActivityIsntanse()).getActionBarView()
 				.setOnItemClickListner(this);
 		((MainActivity) EpubReader.getActivityIsntanse()).getActionBarView()

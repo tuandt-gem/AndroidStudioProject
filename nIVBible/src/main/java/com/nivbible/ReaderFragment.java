@@ -310,6 +310,9 @@ public class ReaderFragment extends Fragment implements IResourceSource, launchC
         try {
             mEpubWebView.setDrawingCacheEnabled(true);
             Bitmap screenShot = mEpubWebView.getDrawingCache();
+            if (screenShot == null) {
+                return;
+            }
             ByteArrayOutputStream bytes = new ByteArrayOutputStream();
             screenShot.compress(Bitmap.CompressFormat.JPEG, 40, bytes);
 
@@ -837,7 +840,7 @@ public class ReaderFragment extends Fragment implements IResourceSource, launchC
                 for (Selection selection : selections) {
                     restoreSelection(selection);
                 }
-            } catch (SQLException e) {
+            } catch (RuntimeException e) {
                 e.printStackTrace();
             }
 
@@ -1593,7 +1596,7 @@ public class ReaderFragment extends Fragment implements IResourceSource, launchC
 //                selectSelection(selection);
                 runOnUiThread(new SelectSelectionRunner(selection));
                 showNoteDialog();
-            } catch (SQLException e) {
+            } catch (RuntimeException e) {
                 e.printStackTrace();
             }
         }

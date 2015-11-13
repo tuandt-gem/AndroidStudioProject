@@ -99,11 +99,11 @@ public class DbHelper extends OrmLiteSqliteOpenHelper {
         return verseRuntimeDao;
     }
 
-    public Selection getSelectionById(int id) throws SQLException {
+    public Selection getSelectionById(int id) throws RuntimeException {
         return getSelectionDataDao().queryForId(id);
     }
 
-    public List<Selection> getAllNotes(String fileName) throws SQLException {
+    public List<Selection> getAllNotes(String fileName) throws RuntimeException, SQLException {
         QueryBuilder<Selection, Integer> queryBuilder = getSelectionDataDao().queryBuilder();
         Where<Selection, Integer> where = queryBuilder.where();
 
@@ -122,7 +122,7 @@ public class DbHelper extends OrmLiteSqliteOpenHelper {
     /**
      * Find selection bound the word in start/end position
      */
-    public Selection findSelectionFromPosition(String fileName, int pageNumber, int start, int end) throws SQLException {
+    public Selection findSelectionFromPosition(String fileName, int pageNumber, int start, int end) throws RuntimeException, SQLException {
         QueryBuilder<Selection, Integer> queryBuilder = getSelectionDataDao().queryBuilder();
         Where<Selection, Integer> where = queryBuilder.where();
 //        queryWhere.put(Selection.COL_PAGE, pageNumber);
@@ -143,9 +143,9 @@ public class DbHelper extends OrmLiteSqliteOpenHelper {
      *
      * @param selection Selection to be updated
      * @return id of selection is updated or created
-     * @throws SQLException
+     * @throws RuntimeException
      */
-    public int createOrUpdateSelection(Selection selection) throws SQLException {
+    public int createOrUpdateSelection(Selection selection) throws RuntimeException, SQLException {
         QueryBuilder<Selection, Integer> queryBuilder = getSelectionDataDao().queryBuilder();
         Where<Selection, Integer> where = queryBuilder.where();
 
@@ -180,7 +180,7 @@ public class DbHelper extends OrmLiteSqliteOpenHelper {
         }
     }
 
-    public List<Selection> getByPage(String fileName, int pageNumber) throws SQLException {
+    public List<Selection> getByPage(String fileName, int pageNumber) throws RuntimeException {
         Map<String, Object> queryWhere = new HashMap<>();
         queryWhere.put(Selection.COL_PAGE, pageNumber);
         queryWhere.put(Selection.COL_FILE_NAME, fileName);
@@ -189,15 +189,15 @@ public class DbHelper extends OrmLiteSqliteOpenHelper {
     }
 
 
-    public void addVerse(Verse verse) throws SQLException {
+    public void addVerse(Verse verse) throws RuntimeException {
         getVerseRuntimeDao().createOrUpdate(verse);
     }
 
-    public List<Verse> getAllVerses() throws SQLException {
+    public List<Verse> getAllVerses() throws RuntimeException {
         return getVerseRuntimeDao().queryForAll();
     }
 
-    public List<Verse> searchVerses(String bookName, String keySearch) throws SQLException {
+    public List<Verse> searchVerses(String bookName, String keySearch) throws RuntimeException, SQLException {
         QueryBuilder<Verse, Integer> queryBuilder = getVerseRuntimeDao().queryBuilder();
         Where<Verse, Integer> where = queryBuilder.where();
 
@@ -211,7 +211,7 @@ public class DbHelper extends OrmLiteSqliteOpenHelper {
     /**
      * Get all verses by book name
      */
-    public List<Verse> getAllVerses(String bookName) throws SQLException {
+    public List<Verse> getAllVerses(String bookName) throws RuntimeException {
         return getVerseRuntimeDao().queryForEq(Verse.BOOK_NAME, bookName);
     }
 
