@@ -516,12 +516,14 @@ public abstract class EpubWebView extends WebView {
 
     public void getBookNameNumberPrevious() {
         if (preferencesBook.getInt("position", Constants.POS0_START) == Constants.POS0_START) {
-            if (position_current < (Constants.POS0_START + 1))
+//            if (position_current < (Constants.POS0_START + 1))
+            if (position_current <= Constants.POS0_START )
                 return;
             else
                 --position_current;
         } else {
-            if (position_current < Constants.POS0_START)
+//            if (position_current < Constants.POS0_START)
+            if (position_current <= Constants.POS0_START)
                 return;
             else
                 --position_current;

@@ -931,7 +931,7 @@ public class ReaderFragment extends Fragment implements IResourceSource, launchC
     @SuppressLint("SetTextI18n")
     @Override
     public void onPageChanged(int position) {
-        if (position != 0) {
+        if (position >= 0) {
             ((MainActivity) EpubReader.getActivityIsntanse()).visibleReader(true);
             ((MainActivity) EpubReader.getActivityIsntanse()).visibleBookMark(true);
 
